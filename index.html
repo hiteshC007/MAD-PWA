@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Hitesh Choudhary - Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/sarveshp46/image/upload/v1677403673/3135715_zj3fsz.png"
+    />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <!-- <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> -->
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <link rel="favicon" type="image/x-icon" href="https://react-portfolio-tau-six.vercel.app/static/media/profilePic.398199b8c979c05e28e5.jpeg">
+        <link rel="stylesheet" href="./index.css">
+
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <style>
+   
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.AppMain{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.home{
+  background-color: #202020;
+  color: white;
+
+  height: 60%;
+  width: 99%;
+  padding: 2px;
+  box-shadow: 4px 3px 8px 1px #1A1A1A;
+  -webkit-box-shadow: 4px 3px 8px 1px #1A1A1A;
+}
+
+.homeMain{
+  padding: 20px;
+
+}
+
+.homeMain > div{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.imageContainer{
+  background-color:202020;
+  border-radius: 150px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.imageContainer > img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.homeName{
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 44px;
+  color: #FEDA4E;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.homeDev{
+  overflow-wrap: normal;
+}
+
+
+.header{
+  background-color: #202020;
+  color: #d9d9d9;
+  width: 96%;
+  z-index: 1;
+  position: fixed;
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items: center;
+
+}
+
+.headMain{
+  display: flex;
+  padding: 10px;
+  flex: 1;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.headMain > a{
+ color: #fff;
+}
+
+.headMain > a:hover{
+  color: violet;
+}
+
+.headMain > div {
+  margin-left: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: font-size 1s ;
+}
+
+.headMain > div:hover{
+color: rgb(247, 72, 72);
+text-decoration: underline;
+font-size: 18px;
+
+}
+
+
+.social{
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.social > a {
+margin-left: 12px;
+border-radius: 50px;
+border: 1px solid #fff;
+
+}
+
+
+.social > a:hover{
+  border-radius: 5px;
+}
+
+.social > img {
+  object-fit: contain;
+  padding: 5px;
+}
+.instagram > img{
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+
+}
+
+
+.twitter > img{
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+}
+
+.Github > img{
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+}
+
+
+
+.projectListMain1{
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-wrap: wrap;
+}
+
+.projectListMain2{
+  display: flex;
+   justify-content: center;
+  margin: 30px;
+  flex-wrap: wrap;
+
+}
+
+.projectListTitle{
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.projectList{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272727;
+  box-shadow: 4px 3px 8px 1px #1A1A1A;
+  -webkit-box-shadow: 4px 3px 8px 1px #1A1A1A;
+}
+
+.projectMore{
+  margin-bottom: 20px;
+  color: white;
+}
+
+.projectMore:hover{
+  color: blue;
+}
+
+
+.projectVideo > video{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+
+}
+
+.projectTitle{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.projectTitle:hover{
+  color: white;
+}
+
+.projectVideo {
+  width: 97%;
+  overflow: hidden;
+  height: 225px;
+  object-fit: contain;
+}
+
+.projectDescription{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.projectComponent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  overflow: hidden;
+  width: 300px;
+  background-color: #FEDA4E;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin: 10px;
+}
+
+.educationContent{
+  color: white;
+  background-color: #272727;
+  box-shadow: 4px 3px 8px 1px #1A1A1A;
+  -webkit-box-shadow: 4px 3px 8px 1px #1A1A1A;
+  display: flex;
+  height: 400px;
+  width:98vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.educationTitle{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.educationDegree{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.beIT{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.twelvthMark{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tenthMark{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.EngineeringMark{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.contactConcept{
+  color: white;
+  width: 95vw;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 4px 1px 8px 1px #1A1A1A;
+  -webkit-box-shadow: 4px 3px 8px 1px #1A1A1A;
+}
+
+.emailForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+
+.contactMainText{
+  text-align: center;
+}
+.contactBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contactPhone{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #202020;
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+}
+
+.compulsoryNotice{
+  margin-top: 10px;
+
+}
+
+.Sendbtn{
+
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.Sendbtn:hover{
+  background-color: #272727;
+  color: white;
+}
+
+.skillsContent{
+  background-color: #202020;
+  color: white;
+  height: 400px;
+  box-shadow: 4px 1px 8px 1px #1A1A1A;
+  -webkit-box-shadow: 4px 3px 8px 1px #1A1A1A;
+}
+
+.skillTitle{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skillMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.skillLanguageBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.skillLanguageBox > div {
+  margin-left: 20px;
+}
+
+
+.skillTechnologiesBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.skillTechnologiesBox > div{
+  margin-left: 20px;
+}
+
+.skillPlatformBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.skillPlatformBox > div {
+  margin-left: 20px;
+}
+
+</style>
+<body>
+  <div class="resumeMain">
+      <div class="main">
+          <div class="resumeHeader">
+              <div class="headMain"><a href="#" >Download ⬇️</a></div>
+              <div class="social"><a class="instagram"
+                      href="https://www.instagram.com/shreyansh0322/"><img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL912fRBBBDE8DP_7XxO8kjwa7yBLsB4UjVw&usqp=CAU" alt="instagram"></a><a
+                      class="twitter"
+                      href="https://twitter.com/Shreyansh0322"><img
+                          src="https://cdn1.vectorstock.com/i/1000x1000/80/35/twitter-logo-icon-vector-29228035.jpg" alt="twitter"></a><a class="Github"
+                      href="https://github.com/SinghShreyansh"><img
+                          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github"></a></div>
+          </div>
+
+          <div class="bodyMain">
+              <div class="home">
+                  <div class="homeMain">
+                      <div class="homeName"><b>Hitesh Choudhary</b></div>
+                      <div class="homeImage">
+                          <div class="imageContainer">
+                              <img style="height:30vh" src="images/profile-pic.jpeg" alt="profile-pic">
+                          </div>
+                      </div>
+                      <div class="homeDev">
+                          <p> I'm <i>Hitesh</i> from <b>India</b> ,a
+                              20 year old tech enthusiast. I do content on
+                              Development. I really enjoy learning
+                              languages and frameworks like React ,as well
+                              as work in Frontend💻
+                          </p>
+                          </div>
+                      </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="projectList">
+                      <div class="projectListTitle"><strong>Projects</strong></div>
+                      <div class="projectListMain1">
+                          <div class="projectComponent">
+                              <div class="projectVideo">
+                                  <video class="projectVideoComponent" controls="">
+                                      <source src="/static/media/nftVideo.070f41c4bd4788ee97e3.mp4">
+                                  </video>
+                              </div>
+                              <a class="projectTitle" href="https://github.com/SinghShreyansh/React_NFT">
+                                  NFT-Project using thirdweb
+                              </a>
+                              <div class="projectDescription">
+                                  <p>
+                                  Modern Cryptopunk Clone with React.js &amp; Web
+                                  3.0... (Dec 2021)
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="projectComponent">
+                              <div class="projectVideo">
+                                  <video class="projectVideoComponent"                                        controls="">
+                                      <source src="/static/media/amazonVideo.4bed22e3e0121ccbdae5.mp4">
+                                  </video>
+                              </div>
+                              <a class="projectTitle" href="https://github.com/SinghShreyansh/amazon-clone">Amazon-Clone
+                              </a>
+                              <div class="projectDescription">
+                                  <p>
+                                  Amazon-Clone web application using React.js , node.js
+                                  , stripe library , express library ...
+                                  (Nov-Dec 2021)
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div
+                          class="projectListMain2"><div
+                              class="projectComponent"><div
+                                  class="projectVideo"><video
+                                      class="projectVideoComponent"
+                                      controls=""><source
+                                          src="/static/media/NewsApp.e218ab1238f358ae2b23.mp4"></video></div><a
+                                  class="projectTitle"
+                                  href="https://github.com/SinghShreyansh/NewsApp">NewsApp</a><div
+                                  class="projectDescription">
+                                  <p>Chatting
+                                  feature and Phone-verification feature ,
+                                  News API, firebase , Android Studio
+                                  ,Java ...(Aug-Sep 2021)
+                              </p>
+                          </div>
+                      </div>
+                      <div
+                              class="projectComponent"><div
+                                  class="projectVideo"><video
+                                      class="projectVideoComponent"
+                                      controls=""><source
+                                          src="/static/media/votingDapp.3e32c365252ca35acf70.mp4"></video></div><a
+                                  class="projectTitle"
+                                  href="https://github.com/SinghShreyansh/Voting-Dapp">Voting
+                                  Dapp</a><div class="projectDescription">
+                                      <p>Decentralized
+                                  Voting web application using React.js ,
+                                  Ganache , remix ide, solidity
+                                  ,web3.js,truffle ... (Nov-2021)
+                              </p>
+                          </div>
+                      </div>
+                  </div><a
+                          class="projectMore"
+                          href="https://github.com/SinghShreyansh?tab=repositories">More
+                          Project on Github...</a></div>
+                          <br>
+                          <br><div
+                      class="skillsContent">
+                      <div class="skillMain">
+                          <div
+                              class="skillTitle"><strong>Skills</strong>
+                          </div>
+                          <table>
+                              <tr>
+                                  <th>Language</th>
+                                  <th>Technologies</th>
+                                  <th>Platforms</th>
+                              </tr>
+                              <tr>
+                                  <td>Java</td>
+                                  <td>React</td>
+                                  <td>Firebase</td>
+                              </tr>
+                              <tr>
+                                  <td>C/C++</td>
+                                  <td>Redux</td>
+                                  <td>thirdweb</td>
+                              </tr>
+                              <tr>
+                                  <td>JavaScript</td>
+                                  <td>Node js</td>
+                                  <td>Web</td>
+                              </tr>
+                              <tr>
+                                  <td>Solidity</td>
+                                  <td>Native App</td>
+                                  <td>Android</td>
+                              </tr>
+
+                          </table>
+                          <br>
+                          <br><div
+                      class="educationContent"><div class="educationMain"><div
+                              class="educationTitle"><strong>Education</strong></div><div
+                              class="educationDegree"><div
+                                  class="Engineering">Vivekanand Education
+                                  Society's Institute of Technology
+                                  (VESIT), Mumbai University</div><small
+                                  class="beIT">B.E (Information
+                                  Technology)</small><div
+                                  class="EngineeringMark"><small> F.E -
+                                      CGPA: 9.57</small><small> (Batch-
+                                      2024)</small></div><div
+                                  class="BoardMark">Mumbai Divisional
+                                  Board (Maharashtra State Board)<div
+                                      class="twelvthMark"><small> 12th
+                                          Grade : 88.30 percentage
+                                      </small><small>( 2019-2020 )</small></div><div
+                                      class="tenthMark"><small> 10th Grade
+                                          : 90.80 percentage </small><small>(
+                                          2017-2018 )</small></div></div></div></div></div>
+
+
+                                          <br>
+                                          <br><div
+                      class="contactConcept"><h1 class="contactMainText">You
+                          can contact me here.</h1><div
+                          class="contactBox"><div class="contactPhone">
+                              <br> <br>📱 +91-9372440098<br> <br> 🏠 Wagale
+                              Estate , Thane(W) , Maharashtra <br></div><div
+                              class="contactMain"><form class="emailForm"><label>Name</label><input
+                                      class="input" type="text"
+                                      name="name" placeholder="Enter
+                                      name..."><label>Email</label><input
+                                      class="input" type="email"
+                                      name="user_email" placeholder="Enter
+                                      email..."><label>Message</label><textarea
+                                      class="input" name="message"
+                                      rows="5" placeholder="Enter
+                                      message..."></textarea><input
+                                      class="Sendbtn" type="submit"
+                                      value="Send"><small
+                                      class="compulsoryNotice"> # Enter
+                                      name , email and message to properly
+                                      send your message to Hitesh 🎉
+                                  </small></form><div
+                                  class="messageOnSubmit"> </div></div></div></div></div>
+          </div>
+      </div>
+
+  </div>
+</body>
+                     
+  <script src="./serviceworker.js"></script>
+  <script>
+    if (!navigator.serviceWorker.controller) {
+      navigator.serviceWorker
+        .register("/serviceworker.js")
+        .then(function (reg) {
+          console.log(
+            "Service worker has been registered for scope: " + reg.scope
+          );
+        });
+    }
+  </script>
+  <script>
+    Notification.requestPermission(function (status) {
+      console.log("Notification permission status:", status);
+    });
+  </script>
+</html>
